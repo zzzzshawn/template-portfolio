@@ -5,13 +5,13 @@ To install this site locally, follow these steps:
 1. **Clone the repository**: Open your terminal and run the commandto clone the repository to your local machine.
 
 ```bash
-git clone https://github.com/zzzzshawn/portfolio-template.git
+git clone https://github.com/zzzzshawn/template-portfolio.git
 ```
 
 2.  **Navigate to the project directory**: Change into the project directory by running
 
 ```bash
-cd portfolio-template
+cd template-portfolio
 ```
 
 3. **Install dependencies**: Run the below commands to install all the project dependencies.
