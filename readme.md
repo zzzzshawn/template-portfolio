@@ -32,10 +32,11 @@ to start the development server.
 5. **Access the site**: Open your web browser and navigate to `http://localhost:5173` to access the site.
 
 6. **Create .env**: Create an account on Emailjs `https://www.emailjs.com/` if you want to send emails directly from client side 
-
+```
     VITE_EMAILJS_SERVICEID=
     VITE_EMAILJS_TEMPLATEID=
     VITE_EMAILJS_PUBLICKEY=
+```
 
 7. **Youre good to go now**
 
