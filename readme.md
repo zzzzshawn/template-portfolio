@@ -38,7 +38,7 @@ to start the development server.
     VITE_EMAILJS_PUBLICKEY=
 ```
 
-7. **Youre good to go now**
+7. **Make changes in src/constants/idex and you're good to go 👍**
 
 **Note:** Make sure you have Node.js and npm or yarn installed on your machine. If you don't have them installed, you can download and install them from the official Node.js website.
 
