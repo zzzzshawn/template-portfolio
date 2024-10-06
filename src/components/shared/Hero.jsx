@@ -1,5 +1,6 @@
 import ReactRotatingText from "react-rotating-text";
 import TextRevealByWord from "../magicui/text-reveal";
+import { aboutMe } from "@/constants";
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
         </div>
 
         <div className="z-10 md:w-[600px] sm:w-[70%] flex items-center justify-center rounded-lg relative ">
-          <TextRevealByWord text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis omnis at temporibus cupiditate natus quam rerum, quisquam fugit in error. Lorem ipsum dolor sit amet."/> 
+          <TextRevealByWord text={aboutMe}/> 
         </div>
         
       </div>

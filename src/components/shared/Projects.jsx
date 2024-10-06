@@ -1,6 +1,6 @@
-import { features } from "@/constants";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import useIntersection from "./useIntersection";
+import { projects } from "@/constants";
 
 export default function Projects() {
   const [ref, ratio] = useIntersection({
@@ -26,7 +26,7 @@ export default function Projects() {
         className={`transition-all duration-500  ease-in-out ${getBlurClass()}`}
       >
         <BentoGrid className="grid-cols-2 grid-rows-6 h-[800px] md:grid-rows-4 md:grid-cols-4 md:h-[900px] gap-2">
-          {features.map((feature) => (
+          {projects.map((feature) => (
             <BentoCard key={feature.name} {...feature} />
           ))}
         </BentoGrid>

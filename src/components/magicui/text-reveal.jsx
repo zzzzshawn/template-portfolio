@@ -7,6 +7,7 @@ import { Modal, ModalTrigger } from "../ui/animated-modal";
 import ModalForm from "../shared/ModalForm";
 import AnimatedShinyText from "./animated-shiny-text";
 import { ArrowRightIcon } from "lucide-react";
+import { name } from "@/constants";
 
 export const TextRevealByWord = ({ text, className }) => {
   const targetRef = useRef(null);
@@ -34,7 +35,7 @@ export const TextRevealByWord = ({ text, className }) => {
 
           <AnimatedGradientText>
             <h1 className="animate-gradient bg-gradient-to-r from-[#ab0c0c] via-[#d33333] to-[#ab0c0c] bg-clip-text text-transparent transition-shadow duration-500 ease-out text-9xl max-xl:text-8xl max-sm:text-7xl">
-              NAME
+              {name}
             </h1>
           </AnimatedGradientText>
         </div>

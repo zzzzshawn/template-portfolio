@@ -1,4 +1,27 @@
-export const features = [
+export const name = "NAME";
+
+export const aboutMe =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis omnis at temporibus cupiditate natus quam rerum, quisquam fugit in error. Lorem ipsum dolor sit amet.";
+
+export const education1 = {
+  name: "Lorem ipsum dolor sit amet.",
+  branch: "Lorem ipsum dolor sit amet.",
+  year: "20XX - 20XX",
+};
+
+export const education2 = {
+  name: "Lorem ipsum dolor sit amet.",
+  branch: "Lorem ipsum dolor sit amet.",
+  year: "20XX - 20XX",
+};
+
+export const experience = {
+  name: "Lorem ipsum dolor sit amet.",
+  moreInfo: "Lorem ipsum dolor sit amet.",
+  year: "Month 20XX - Month 20XX",
+};
+
+export const projects = [
   {
     name: "Project Name",
     description: "Stack: reactjs, tailwindcss, etc",

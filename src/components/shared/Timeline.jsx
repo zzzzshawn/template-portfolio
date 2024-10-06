@@ -1,4 +1,5 @@
 // import { BorderBeam } from "../magicui/border-beam";
+import { education1, education2, experience } from "@/constants";
 import BoxReveal from "../magicui/box-reveal";
 
 const Timeline = () => {
@@ -18,20 +19,20 @@ const Timeline = () => {
             <li>
               <BoxReveal boxColor={`#ab0c0c`}>
                 <p className="text-5xl max-xl:text-4xl max-sm:text-3xl  mb-2">
-                Lorem ipsum dolor sit amet.
+                {education1.name}
                 </p>
               </BoxReveal>
 
               <BoxReveal boxColor={`#ab0c0c`}>
                 <p className="text-4xl max-xl:text-2xl max-sm:text-xl  ">
                   {" "}
-                  Lorem ipsum dolor sit amet.
+                  {education1.branch}
                   </p>
               </BoxReveal>
 
               <BoxReveal boxColor={`#ab0c0c`}>
                 <p className="text-3xl max-xl:text-xl max-sm:text-lg  mb-5">
-                  20XX - 20XX
+                  {education1.year}
                 </p>
               </BoxReveal>
             </li>
@@ -39,12 +40,12 @@ const Timeline = () => {
             <li>
               <BoxReveal boxColor={`#ab0c0c`}>
                 <p className="text-5xl max-xl:text-4xl max-sm:text-3xl mb-2 ">
-                Lorem ipsum dolor sit amet.
+                {education2.name}
                 </p>
               </BoxReveal>
               <BoxReveal boxColor={`#ab0c0c`}>
                 <p className="text-3xl max-xl:text-xl max-sm:text-lg  ">
-                  20XX - 20XX
+                  {education2.year}
                 </p>
               </BoxReveal>
             </li>
@@ -64,19 +65,19 @@ const Timeline = () => {
             <li>
               <BoxReveal boxColor={`#ab0c0c`}>
                 <p className="text-5xl max-xl:text-4xl max-sm:text-3xl my-2 ">
-                Lorem ipsum dolor sit amet.
+                {experience.name}
                 </p>
               </BoxReveal>
 
               <BoxReveal boxColor={`#ab0c0c`}>
                 <p className="text-4xl max-xl:text-2xl max-sm:text-xl  ">
-                Lorem ipsum dolor sit amet.
+                {experience.moreInfo}
                 </p>
               </BoxReveal>
 
               <BoxReveal boxColor={`#ab0c0c`}>
                 <p className="text-3xl max-xl:text-xl max-sm:text-lg  ">
-                  Month 20XX - Month 20XX
+                  {experience.year}
                 </p>
               </BoxReveal>
             </li>
