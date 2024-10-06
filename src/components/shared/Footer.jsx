@@ -1,3 +1,4 @@
+import { socials } from "@/constants";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -13,7 +14,7 @@ const Footer = () => {
         </Link>
         <Link
           className="footer-link"
-          to="https://github.com/zzzzshawn"
+          to={socials.github}
           target="_blank"
         >
           {" "}
@@ -21,7 +22,7 @@ const Footer = () => {
         </Link>
         <Link
           className="footer-link"
-          to="/"
+          to={socials.twitter}
           target="_blank"
         >
           {" "}

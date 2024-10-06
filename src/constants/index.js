@@ -149,3 +149,9 @@ export const skills = [
     src: "/icons/18.svg",
   },
 ];
+
+
+export const socials = {
+  github: 'https://github.com/zzzzshawn',
+  twitter: 'https://x.com/zzzzshawn'
+}
