@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import CustomCursor from "./components/shared/CustomCursor";
 import Footer from "./components/shared/Footer";
 import Hero from "./components/shared/Hero";
@@ -6,19 +5,9 @@ import Projects from "./components/shared/Projects";
 import Skills from "./components/shared/Skills";
 import Timeline from "./components/shared/Timeline";
 import { TracingBeam } from "./components/ui/TracingBeam";
-import { theme } from "./constants";
 
 const App = () => {
-  useEffect(() => {
-    const themecolor = (color) => {
-      document.documentElement.style.setProperty('--main-color', color);
-    }
-    themecolor(theme);
-  }, [])
-  
-  
 
- 
   return (
     <>
       <CustomCursor />
