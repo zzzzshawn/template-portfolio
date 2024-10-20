@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { BorderBeam } from "./border-beam";
 import { Link } from "react-router-dom";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+import { theme } from "@/constants";
 
 const BentoGrid = ({ children, className }) => {
   return (
@@ -33,16 +34,15 @@ const BentoCard = ({
       to={href}
       key={name}
       target="_blank"
-      // onMouseMove={(e) => {
-      //   const { left, top } = e.currentTarget.getBoundingClientRect();
-
-      //   mouseX.set(e.clientX - left);
-      //   mouseY.set(e.clientY - top);
-      // }}
+      style={
+        {
+          "--theme": theme,
+        }
+      }
       className={cn(
         "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-md transition ease-in-out",
         // light styles
-        "bg-dark-2  border-dark-4  cursor-none max-sm:border-[#ab0c0c] max-sm:border-2",
+        "bg-dark-2  border-dark-4  cursor-none max-sm:border-2 max-sm:border-solid [border:var(--theme)]",
         // dark styles
         "cursor-none",
         className
@@ -61,7 +61,7 @@ const BentoCard = ({
       <img className="absolute opacity-100 hover:blur-xl p-1 md:p-2 object-cover h-full w-full " src={background} />
       </div>
       <div className="pointer-events-none z-1 flex transform-gpu flex-col gap-1 max-sm:px-6 p-6 max-sm:py-2 transition-all duration-300 group-hover:items-center group-hover:justify-center group-hover:h-full ">
-        <h1 className="xl:text-5xl text-3xl group-hover:text-white text-[#ab0c0c] max-sm:text-2xl font-bold ">
+        <h1 className="xl:text-5xl text-3xl group-hover:text-white [color:var(--theme)] max-sm:text-2xl font-bold ">
           {name}
         </h1>
         <p className="max-w-lg text-base text-white max-sm:hidden">

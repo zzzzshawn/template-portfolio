@@ -1,3 +1,4 @@
+import { theme } from "@/constants";
 import { cn } from "@/lib/utils";
 
 export const BorderBeam = ({
@@ -6,8 +7,8 @@ export const BorderBeam = ({
   duration = 20,
   anchor = 90,
   borderWidth = 1.5,
-  colorFrom = "#ab0c0c",
-  colorTo = "#aa0c0c",
+  colorFrom = theme,
+  colorTo = theme,
   delay = 0
 }) => {
   return (

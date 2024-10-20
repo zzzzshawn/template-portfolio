@@ -2,12 +2,11 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { cn } from "@/lib/utils";
-import AnimatedGradientText from "./animated-gradient-text";
 import { Modal, ModalTrigger } from "../ui/animated-modal";
 import ModalForm from "../shared/ModalForm";
 import AnimatedShinyText from "./animated-shiny-text";
 import { ArrowRightIcon } from "lucide-react";
-import { name } from "@/constants";
+import { name, theme } from "@/constants";
 
 export const TextRevealByWord = ({ text, className }) => {
   const targetRef = useRef(null);
@@ -20,10 +19,17 @@ export const TextRevealByWord = ({ text, className }) => {
   const buttonOpacity = useTransform(scrollYProgress, [0.8, 1], [0, 1]);
   const buttonX = useTransform(scrollYProgress, [0.8, 1], [250, 0]);
 
+
+
   return (
     <div
       ref={targetRef}
       className={cn("relative z-50 min-h-[195vh] max-sm:min-h-[168vh] ", className)}
+      style={
+        {
+          "--color": theme,
+        }
+      }
     >
       <div
         className={
@@ -33,11 +39,9 @@ export const TextRevealByWord = ({ text, className }) => {
         <div className="w-full flex flex-col items-center justify-center">
           <h1 className="inline-block text-6xl max-md:text-3xl">i&apos;m</h1>
 
-          <AnimatedGradientText>
-            <h1 className="animate-gradient bg-gradient-to-r from-[#ab0c0c] via-[#d33333] to-[#ab0c0c] bg-clip-text text-transparent transition-shadow duration-500 ease-out text-9xl max-xl:text-8xl max-sm:text-7xl">
+            <h1 className={` text-9xl max-xl:text-8xl max-sm:text-7xl [color:var(--color)]` }>
               {name}
             </h1>
-          </AnimatedGradientText>
         </div>
         <p
           className={
@@ -65,10 +69,10 @@ export const TextRevealByWord = ({ text, className }) => {
                 <div className="z-10 flexitems-center justify-center">
                   <div
                     className={cn(
-                      "group rounded-full text-base text-white transition-all ease-in border-b hover:cursor-pointer  border-white/50 bg-neutral-950 hover:bg-neutral-800"
+                      "group rounded-full text-base text-white transition-all ease-in border border-zinc-600/70 hover:cursor-pointer  bg-neutral-950 hover:bg-neutral-800"
                     )}
                   >
-                    <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-4 transition ease-out hover:text-red-400 hover:duration-300 lg:text-3xl md:text-2xl">
+                    <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-4 transition ease-out hover:[color:var(--color)] hover:duration-300 lg:text-3xl md:text-2xl">
                       <button>👋 Say hi!</button>
                       <ArrowRightIcon className="ml-1 size-5 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                     </AnimatedShinyText>

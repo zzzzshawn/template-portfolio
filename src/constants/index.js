@@ -1,3 +1,8 @@
+
+// Make changes here!!
+
+export const theme = "#ff0000" // red
+
 export const name = "NAME";
 
 export const aboutMe =
@@ -75,6 +80,7 @@ export const projects = [
   },
 ];
 
+// change fill color of icons manually
 export const skills = [
   {
     title: "Reactjs",
@@ -155,3 +161,4 @@ export const socials = {
   github: 'https://github.com/zzzzshawn',
   twitter: 'https://x.com/zzzzshawn'
 }
+

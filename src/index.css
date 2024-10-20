@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    --main-theme: #E50914;
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
@@ -83,7 +84,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ab0c0c; /* Color of the draggable part of the scrollbar */
+  background: var(--main-theme); /* Color of the draggable part of the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -93,7 +94,7 @@ body {
 /* Custom scrollbar for Firefox */
 .scrollable-element {
   scrollbar-width: thin; /* Make scrollbar thinner */
-  scrollbar-color: #fff #ab0c0c; /* thumb color and track color */
+  scrollbar-color: #fff var(--main-theme); /* thumb color and track color */
 }
 
 /* index.css */
@@ -115,14 +116,14 @@ body {
 .text-cursor {
   width: 4px;
   height: 50px;
-  background-color: red; /* Color for text elements */
+  background-color: var(--main-theme); /* Color for text elements */
   border-radius: 0; /* Vertical line shape */
 }
 
 .text-cursor2 {
   width: 4px;
   height: 100px;
-  background-color: red; /* Color for text elements */
+  background-color: var(--main-theme); /* Color for text elements */
   border-radius: 0; /* Vertical line shape */
 }
 
@@ -133,5 +134,6 @@ body {
 }
 
 .footer-link-cursor {
-  background-color: rgb(204, 18, 18, 0.4);
+  background-color: var(--main-theme);
+  opacity: 0.3;
 }

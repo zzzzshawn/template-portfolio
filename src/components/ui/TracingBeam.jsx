@@ -7,6 +7,7 @@ import {
   useSpring,
 } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { theme } from "@/constants";
 
 export const TracingBeam = ({
   children,
@@ -130,8 +131,8 @@ export const TracingBeam = ({
             >
               <stop stopColor="#F5F5F1" stopOpacity="0"></stop>
               <stop stopColor="#F5F5F1"></stop>
-              <stop offset="0.225" stopColor="#E50914"></stop>
-              <stop offset="1" stopColor="#E50914" stopOpacity="0"></stop>
+              <stop offset="0.225" stopColor={theme}></stop>
+              <stop offset="1" stopColor={theme} stopOpacity="0"></stop>
             </motion.linearGradient>
           </defs>
         </svg>

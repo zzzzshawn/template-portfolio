@@ -1,3 +1,4 @@
+import { theme } from "@/constants";
 import { cn } from "@/lib/utils";
 
 const AnimatedShinyText = ({
@@ -9,7 +10,8 @@ const AnimatedShinyText = ({
     (<p
       style={
         {
-          "--shimmer-width": `${shimmerWidth}px`
+          "--shimmer-width": `${shimmerWidth}px`,
+          "--shimmer-color": theme
         }
       }
       className={cn(
@@ -17,7 +19,7 @@ const AnimatedShinyText = ({
         // Shimmer effect
         "animate-shimmer bg-clip-text bg-no-repeat [background-position:0_0] [background-size:var(--shimmer-width)_100%] [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite]",
         // Shimmer gradient
-        "bg-gradient-to-r from-transparent via-50% to-transparent  via-red-600",
+        "bg-gradient-to-r from-transparent via-50% to-transparent  via-[var(--shimmer-color)]",
         className
       )}>
       {children}
